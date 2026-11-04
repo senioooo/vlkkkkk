@@ -1,0 +1,412 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101713;
+    color: #eeeae0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+
+
+
+.navbar {
+    height: 85px;
+    padding: 0 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #101713;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.logo span {
+    color: #a4b58c;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d5d8ce;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a4b58c;
+}
+
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 76px;
+    line-height: 1.1;
+    margin: 25px 0;
+    letter-spacing: 2px;
+}
+
+.hero-description {
+    color: #d0d3c9;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 390px;
+    margin-bottom: 35px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 15px 27px;
+    background: #a4b58c;
+    color: #101713;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background: #d2dfbd;
+    transform: translateY(-3px);
+}
+
+
+
+.wolf-section {
+    padding: 100px 9%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading h2,
+.gallery h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    margin-top: 12px;
+}
+
+.wolf-card {
+    border-radius: 40px;
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    background: #19231d;
+    border: 1px solid #303d32;
+}
+
+.wolf-photo {
+    border-radius: 20px;
+    position: relative;
+    min-height: 650px;
+}
+
+.wolf-photo img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.photo-label {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background: rgba(16, 23, 19, 0.85);
+    padding: 12px 18px;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.wolf-info {
+    padding: 50px 45px;
+}
+
+.wolf-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    margin: 8px 0 20px;
+}
+
+.wolf-info h2 span {
+    color: #a4b58c;
+}
+
+.wolf-text {
+    color: #bfc8bd;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 25px 0;
+    border-top: 1px solid #39463b;
+    border-bottom: 1px solid #39463b;
+}
+
+.detail span {
+    display: block;
+    color: #a4b58c;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+.detail strong {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.health,
+.success,
+.parents {
+    margin-top: 28px;
+}
+
+.health h3,
+.success h3,
+.parents h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+
+ p {
+    font-size: 20px;
+ }
+.parents p {
+    color: #c2c9bf;
+    font-size: 13px;
+    margin: 9px 0;
+}
+
+.health p:first-of-type {
+    color: #b9d4a3;
+}
+
+.health small {
+    display: block;
+    margin-top: 12px;
+    color: #899589;
+    font-size: 11px;
+}
+
+.pdf-button {
+    display: inline-block;
+    margin-top: 17px;
+    padding: 12px 20px;
+    border: 1px solid #a4b58c;
+    color: #c4d4b2;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.pdf-button:hover {
+    background: #a4b58c;
+    color: #101713;
+}
+
+/* GALERIE */
+
+.gallery {
+    padding: 90px 9%;
+    text-align: center;
+    background: #19231d;
+}
+
+.gallery h2 {
+    margin-bottom: 45px;
+}
+
+.gallery-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: 0.4s;
+}
+
+.gallery-grid img:hover {
+    filter: brightness(1);
+    transform: scale(1.03);
+}
+
+/* PATIČKA */
+
+footer {
+    text-align: center;
+    padding: 55px 20px;
+    background: #0b100d;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+    font-size: 28px;
+}
+
+footer p {
+    color: #a4b58c;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+footer .copyright {
+    color: #68736a;
+    margin-top: 30px;
+    font-size: 11px;
+}
+
+
+
+
+.wolf-card {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #19231d;
+    border: 1px solid #303d32;
+}
+
+
+
+.wolf-photo {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    min-height: 550px;
+    overflow: hidden;
+}
+
+.wolf-photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+.photo-label {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background: rgba(16, 23, 19, 0.85);
+    padding: 12px 18px;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+
+
+.wolf-info {
+    width: 100%;
+    padding: 55px 65px;
+}
+
+.wolf-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    margin: 8px 0 20px;
+}
+
+
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 30px 0;
+    border-top: 1px solid #39463b;
+    border-bottom: 1px solid #39463b;
+}
+
+
+@media (max-width: 550px) {
+
+    .navbar {
+        height: auto;
+        padding: 25px 5%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    .hero {
+        min-height: 480px;
+        padding: 60px 8%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .wolf-section,
+    .gallery {
+        padding: 65px 5%;
+    }
+
+    .wolf-info {
+        padding: 30px 22px;
+    }
+
+    .wolf-info h2 {
+        font-size: 48px;
+    }
+
+    .details {
+        gap: 20px;
+    }
+
+    .gallery-grid img {
+        height: 160px;
+    }
+
+    .section-heading h2,
+    .gallery h2 {
+        font-size: 35px;
+    }
+}
