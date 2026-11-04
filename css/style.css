@@ -220,6 +220,7 @@ nav a:hover {
 }
 
 .pdf-button {
+    border-radius: 35px;
     display: inline-block;
     margin-top: 17px;
     padding: 12px 20px;
@@ -236,7 +237,7 @@ nav a:hover {
     color: #101713;
 }
 
-/* GALERIE */
+
 
 .gallery {
     padding: 90px 9%;
@@ -269,9 +270,10 @@ nav a:hover {
     transform: scale(1.03);
 }
 
-/* PATIČKA */
+
 
 footer {
+    border-radius: 30px;
     text-align: center;
     padding: 55px 20px;
     background: #0b100d;
