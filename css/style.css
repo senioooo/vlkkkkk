@@ -7,6 +7,17 @@
     box-sizing: border-box;
 }
 
+main {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+display: flex;
+align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -16,10 +27,6 @@ body {
     color: #eeeae0;
     font-family: 'DM Sans', sans-serif;
 }
-
-
-
-
 
 
 .navbar {
@@ -336,7 +343,6 @@ footer .copyright {
     background: rgba(16, 23, 19, 0.85);
     padding: 12px 18px;
     font-size: 10px;
-    letter-spacing: 3px;
 }
 
 
